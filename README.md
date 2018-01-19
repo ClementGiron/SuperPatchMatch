@@ -1,5 +1,5 @@
 # SuperPatchMatch
-Implementation of the SuperPatchMatch algorithm - application to image segmentation
+Implementation of the SuperPatchMatch algorithm - application to image segmentation and color transfer
 
 Reference: Rémi Giraud, Vinh-Thong Ta, Aurélie Bugeau, Pierrick Coupé, Nicolas Papadakis. SuperPatchMatch:
 an Algorithm for Robust Correspondences using Superpixel Patches. IEEE Transactions on Image
