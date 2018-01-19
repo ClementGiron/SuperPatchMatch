@@ -11,6 +11,7 @@ for i = 1:N_iter
     i
     figure(2);
     colorGoodMatch(A, ANN, LA, 0, 191, 255);
+    %saveas(gcf, strcat(['match_iter', int2str(i), '.jpg']));
     if mod(i,2)
         % even iteration: search candidates nearby previous neighbors
         for sPixA = scanOrderA

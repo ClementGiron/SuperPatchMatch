@@ -1,6 +1,6 @@
 function [F] = HoGFeatures(A, L, NumLabels, step)
-% HistFeatures takes as arguments image A, superPixels L, NumLabels
-% Returns a matrix where each line i is the empirical distribution function
+% HoGFeatures takes as arguments image A, superPixels L, NumLabels, step
+% Returns a matrix where each line i is the mean of HOGs
 % of the pixels in the superPixel i
 
 [Lx, Ly] = size(A);
@@ -16,7 +16,7 @@ for i=1:step:Lx
     end
 end
 
-[hogFeatures, effectivePoints] = extractHOGFeatures(A, points, 'CellSize', [8 8], 'NumBins', 18);
+[hogFeatures, effectivePoints] = extractHOGFeatures(A, points, 'CellSize', [5 5], 'NumBins', 27);
 F = zeros(NumLabels, size(hogFeatures, 2));
 countPoints = zeros(NumLabels, 1);
 
