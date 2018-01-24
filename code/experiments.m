@@ -141,8 +141,8 @@ sigma2 = sqrt(2)*R;
 %% Cell 6: Color transfer
 
 % images: A is the target, B is the source
-A = imresize(imread('aa.jpg'), [256 256]);  % resize to reduce computational time
-B = imresize(imread('bb.jpg'), [256 256]);
+A = imresize(imread('bois.jpg'), [256 256]);  % resize to reduce computational time
+B = imresize(imread('galaxy.jpg'), [256 256]);
 
 % Superpixel decomposition
 [LA,NumLabelsA] = superpixels(A,130);
